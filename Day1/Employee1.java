@@ -1,4 +1,4 @@
-public class Employee {
+public class Employee1 {
     // Instance variables
     private int empId;
     private String name;
@@ -6,7 +6,7 @@ public class Employee {
     private double salary;
 
     // Parameterized constructor
-    public Employee(int empId, String name, String department, double salary) {
+    public Employee1(int empId, String name, String department, double salary) {
         this.empId = empId;
         this.name = name;
         this.department = department;
@@ -25,8 +25,8 @@ public class Employee {
     // Main method to test the Employee class
     public static void main(String[] args) {
         // Creating an Employee object
-        Employee emp = new Employee(101, "Jayaram", "Developer", 80000.00);
-        Employee emp2 = new Employee(102, "Ram Kumar", "Tester", 75000.00);
+        Employee1 emp = new Employee1(101, "Jayaram", "Developer", 80000.00);
+        Employee1 emp2 = new Employee1(102, "Ram Kumar", "Tester", 75000.00);
         // Displaying employee details
         emp.displayDetails();
         emp2.displayDetails();

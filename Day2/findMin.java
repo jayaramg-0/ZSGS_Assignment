@@ -1,4 +1,3 @@
-package Day2;
 class findMin {
     public static void main(String[] args) {
         int a = 34 ,b = 23,c = 12;
