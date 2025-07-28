@@ -16,7 +16,6 @@ class B {
 //         System.out.println("Class C method");
 //     }
 // }
-
 public class MultipleInheritanceDemo {
     public static void main(String[] args) {
         System.out.println("Java does not support multiple inheritance with classes.");
