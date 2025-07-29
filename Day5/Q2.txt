@@ -1,0 +1,95 @@
+Q2. Can we override private method, constructor, static method, final method? Illustrate with an example.
++----------------+-----------------------+---------------------+
+|Method Type     |      Overridable      |       Reason        |
++----------------+-----------------------+---------------------+
+|Private         |           No          |    Not Inherited    |
+|constructor     |           No          |    Not Inherited    |
+|static          |         No(hidden)    |    Belongs to Class |
+|final           |         Restricted    |    Restricted       |
++----------------+-----------------------+---------------------+
+
+Private Method:
+class Parent {
+    private void show() {
+        System.out.println("Parent show()");
+    }
+}
+
+class Child extends Parent {
+    // This is not overriding, it's a new method
+    public void show() {
+        System.out.println("Child show()");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show(); // Output : Child show()
+    }
+}
+
+Constructor
+class Parent {
+    Parent() {
+        System.out.println("Parent Constructor");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        System.out.println("Child Constructor");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new Child(); 
+    }
+}
+
+Output:
+Parent Constructor
+Child Constructor
+
+Static Method:
+
+class Parent {
+    static void display() {
+        System.out.println("Parent static displayed");
+    }
+}
+
+class Child extends Parent {
+    static void display() {
+        System.out.println("Child static displayed");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Parent p = new Child();
+        p.display();  // Output: Parent static displayed
+    }
+}
+
+Final Method:
+class Parent {
+    final void show() {
+        System.out.println("Parent final show()");
+    }
+}
+
+class Child extends Parent {
+    // Not allowed – compile-time error
+    // void show() {
+    //     System.out.println("Child show()");
+    // }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new Child().show(); // output :  Parent final show
+    }
+}
+
