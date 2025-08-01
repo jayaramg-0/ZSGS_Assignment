@@ -52,6 +52,8 @@ public class Q3EmpSalary {
     public static void main(String arg[]) {
         FullTimeEmployee emp1 = new FullTimeEmployee(101, "Jayaram", 98000);
         PartTimeEmployee emp2 = new PartTimeEmployee(102, "Ram Kumar",90,600);
+        Employee em = new Employee(12,"Ram");
+        em.display();
 
         emp1.display();
         System.out.println("Salary: " + emp1.CalcSalary());
