@@ -21,4 +21,15 @@ public class Q7_ExceptionPropagation {
     public static void main(String[] args) {
         method1();
     }
+//     main() -> calls method1()
+
+// method1() -> calls method2()
+
+// method2() -> calls method3()
+
+// method3() -> throws ArithmeticException
+
+// Exception moves backward: method3 -> method2 -> method1
+
+// method1() has a catch, so it catches the exception
 }

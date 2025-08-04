@@ -13,5 +13,6 @@ public class Q4_ParseStringToInt {
     public static void main(String[] args) {
         parseInt("123");
         parseInt("abc");
+
     }
 }
