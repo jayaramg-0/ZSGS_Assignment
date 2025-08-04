@@ -1,3 +1,6 @@
+/*4. Design the Vehicle class that stores information about a vehicle such as its vehicle ID,
+brand name, and price, such that it can internally keep track of how many vehicles have been created so far,
+without requiring manual counting from outside the class. */
 class Vehicle {
     static int count = 0;
     int vehicleId;

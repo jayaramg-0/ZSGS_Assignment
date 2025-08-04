@@ -1,3 +1,4 @@
+/*4. Write a program to illustrate that Classes cannot be used for multiple Inheritance. */
 class A {
     public void displayA() {
         System.out.println("Class A method");

@@ -1,5 +1,23 @@
 import java.util.Scanner;
 
+/*
+ * Design a Java program to maintain hospital medical records.
+Create a base class named MedicalRecord that includes common attributes:
+--- recordId, patientName, dateOfVisit, and diagnosis.
+--- inputRecordDetails() – to input common record information.
+--- override displayRecord() – to display the common record details.
+‌
+Create a subclass InPatientRecord that extends MedicalRecord and adds:
+--- roomNumber, numberOfDaysAdmitted, roomCharges.
+--- calculateTotalCharges() – to compute and return total inpatient cost.
+--- displayRecord() – to include all details, including total charges.
+‌
+Create another subclass OutPatientRecord that extends MedicalRecord and adds:
+--- doctorName, consultationFee.
+--- override displayRecord() – to include all outpatient-specific details.
+Include all the necessary classes if its needed.
+ */
+
 class MedicalRecord {
     protected int recordId;
     protected String patientName;

@@ -1,3 +1,10 @@
+/*2. Create a class named Student that has the following attributes:
+name (String)
+roll_no (int)
+phone_no (int)
+address (String)
+Create a constructor Student(String name, int roll_no, int phone_no, String address) and 
+store and display the details for two students having names "Sam" and "John" respectivel */
 class StudentDetailsQ2 {
     String name;
     int roll_no;
