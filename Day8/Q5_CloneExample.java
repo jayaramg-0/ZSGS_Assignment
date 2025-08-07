@@ -16,7 +16,7 @@ class Person implements Cloneable {
 public class Q5_CloneExample {
     public static void main(String[] args) {
         try {
-            Person p1 = new Person("Alice", 25);
+            Person p1 = new Person("Deva", 25);
             Person p2 = (Person) p1.clone();
             System.out.println(p1.name + " " + p1.age);
             System.out.println(p2.name + " " + p2.age);

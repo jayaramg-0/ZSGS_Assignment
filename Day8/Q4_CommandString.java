@@ -1,5 +1,5 @@
 //  Get some strings through the command-line prompt and use an array to store and display them
-public class Q4_CommandLineStrings {
+public class Q4_CommandString {
     public static void main(String[] args) {
         // Check if arguments are passed
         if (args.length == 0) {

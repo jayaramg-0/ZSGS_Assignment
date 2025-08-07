@@ -29,7 +29,7 @@ class Student implements Cloneable {
 
 public class Q8_CloneStudentExample {
     public static void main(String[] args) {
-        Student s1 = new Student("John", 101, "CS");
+        Student s1 = new Student("Tommy", 101, "CS");
         try {
             Student s2 = (Student) s1.clone();
             System.out.println("Original: " + s1);
