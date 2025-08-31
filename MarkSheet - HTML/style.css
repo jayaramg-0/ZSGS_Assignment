@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 15px;
+}
+.container{
+    margin: 0 auto;
+    border: 5px solid black;
+    width: 85%;
+    padding: 10px;
+    background: linear-gradient(to right ,#85afae ,#D5D7CE,#86ACAB);
+    /* background-color: #D5D7CE; */
+    /* padding: 10px; */
+}
+
+.forImg{
+    background-image: linear-gradient(rgba(255,255,255,0.8) ,rgba(255,255,255,0.8)),url(logo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.first{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-bottom: transparent;
+}
+
+.third{
+    padding-top: 10px;
+}
+.fourth{
+    padding-top: 10px;
+}
+.fifth{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.sign{
+    padding-left: 100px;
+    height: 88px;
+    padding-top: 66px;
+    background-color: burlywood;
+    width: 60%;
+
+}
+.secS{
+    border: 1px solid black;
+}
+.secSign{
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+.marks{
+    text-align: center;
+    border: 1px solid black;
+}
+.heads{
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.photo{
+    width: 15%;
+    /* border: 1px solid black; */
+    padding: 30px 0px 15px 0px;
+}
+.prof{
+    width:120px;
+    height: 175px;
+}
+.snum{
+    padding-right: 214px;
+}
+.msuIm{
+    padding-right: 150px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.secSign{
+    background-color: #88959B;
+    height: 88px;
+    padding-top: 45px;
+}
+.secS td {
+    padding: 5px 0px 10px 15px ;
+    /* border: 1px solid #444; */
+}
+.marks td {
+    padding:  10px;
+    /* border: none; */
+}
+.credits{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.third td {
+    border: none; 
+    border-right: 1px solid;
+}
+
+.third tr:first-child {
+    border: 1px solid; 
+}
+/* tr:first-child{
+    border-bottom : none;
+}
+tr td{
+    border: none;
+} */
+/* 
+tr:first-child{
+    border-bottom : none;
+}
+
+tr:nth-child(2){
+    border-top : none;
+} */
