@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="titl">Registration Form</h2>
+      <div class="wrapper">
+        <div class="first">
+          <form id="regForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" class="infoc" required />
+            <span class="error-msg" id="fullname-error"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="infoc" required />
+            <span class="error-msg" id="email-error"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="infoc" required />
+            <span class="error-msg" id="password-error"></span>
+
+            <label for="gender">Gender</label>
+            <div class="gen">
+              <input type="radio" name="gender" value="male" /> Male
+              <input type="radio" name="gender" value="female" /> Female
+              <input type="radio" name="gender" value="other" /> Other
+            </div>
+            <span class="error-msg" id="gender-error"></span>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" class="infoc" required />
+            <span class="error-msg" id="dob-error"></span>
+        </div>
+
+        <div class="second">
+            <label for="Aname">Aadhar Number</label>
+            <input type="number" name="Aname" id="anum" class="infoc" required />
+            <span class="error-msg" id="anum-error"></span>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" class="infoc" required />
+            <span class="error-msg" id="address-error"></span>
+
+            <div class="cities">
+              <input type="number" class="infoc" name="pincode" id="pincode" pattern="[0-9]{6}" maxlength="6" placeholder="Pincode" required />
+              <span class="error-msg" id="pincode-error"></span>
+
+              <select name="City" id="citySelect" class="infoc" required>
+                <option value="City" disabled selected>City</option>
+                <option value="Tenkasi">Tenkasi</option>
+                <option value="Thirunelveli">Thirunelveli</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Thanjavore">Thanjavore</option>
+                <option value="kerala">Kerala</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="hyderabad">Hyderabad</option>
+              </select>
+              <span class="error-msg" id="citySelect-error"></span>
+            </div>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" class="infoc" required />
+            <span class="error-msg" id="country-error"></span>
+
+          </form>
+        </div>
+      </div>
+      <div class="last">
+        <button type="submit" form="regForm">Submit</button>
+      </div>
+    </div>
+    <script src="main.js"></script>  
+  </body>
+</html>

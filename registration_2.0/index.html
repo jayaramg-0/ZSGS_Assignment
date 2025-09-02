@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 class="titl">Registration Form</h2>
+    <hr class="center-line" />
+
+    <form id="regForm" class="form-grid">
+      <!-- Full Name -->
+      <div class="field">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" class="infoc" placeholder="Enter your full name" />
+        <span class="error-msg" id="fullname-error"></span>
+      </div>
+
+      <!-- Email -->
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" class="infoc" placeholder="you@example.com" />
+        <span class="error-msg" id="email-error"></span>
+      </div>
+
+      <!-- Password -->
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="infoc" placeholder="Minimum 6 characters" />
+        <span class="error-msg" id="password-error"></span>
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="field">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" class="infoc" />
+        <span class="error-msg" id="dob-error"></span>
+      </div>
+
+      <!-- Aadhaar -->
+      <div class="field">
+        <label for="anum">Aadhaar Number</label>
+        <input type="text" id="anum" class="infoc" inputmode="numeric" placeholder="12 digits" />
+        <span class="error-msg" id="anum-error"></span>
+      </div>
+
+      <!-- Address -->
+      <div class="field">
+        <label for="address">Address</label>
+        <input type="text" id="address" class="infoc" placeholder="Street, Area" />
+        <span class="error-msg" id="address-error"></span>
+      </div>
+
+      <!-- Pincode -->
+      <div class="field">
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" class="infoc" inputmode="numeric" placeholder="6 digits" />
+        <span class="error-msg" id="pincode-error"></span>
+      </div>
+
+      <!-- City -->
+      <div class="field">
+        <label for="citySelect">City</label>
+        <select id="citySelect" class="infoc">
+          <option value="" disabled selected>Select city</option>
+          <option value="Tenkasi">Tenkasi</option>
+          <option value="Thirunelveli">Thirunelveli</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Thanjavore">Thanjavore</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Hyderabad">Hyderabad</option>
+        </select>
+        <span class="error-msg" id="citySelect-error"></span>
+      </div>
+
+      <!-- Country (spans both columns on desktop) -->
+      <div class="field span-2">
+        <label for="country">Country</label>
+        <input type="text" id="country" class="infoc" placeholder="e.g., India" />
+        <span class="error-msg" id="country-error"></span>
+      </div>
+
+      <!-- Gender (spans both columns) -->
+      <div class="field span-2">
+        <label>Gender</label>
+        <div class="gen">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+        <span class="error-msg" id="gender-error"></span>
+      </div>
+
+      <!-- Submit (spans both columns) -->
+      <div class="actions span-2">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
