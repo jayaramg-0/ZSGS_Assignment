@@ -24,6 +24,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+.content{
+    padding-top: 20px;
+    line-height: 30px;
+}
 .first{
     text-align: center;
     display: flex;

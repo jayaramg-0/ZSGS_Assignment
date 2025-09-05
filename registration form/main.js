@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (input) input.classList.remove("error");
   }
 
-  // clear the error message when user starts typing.
+  // clear the error message when starts typing.
   document.querySelectorAll(".infoc").forEach(input => {
     input.addEventListener("input", () => clearFieldError(input.id));
   });
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (isValid) {
-      alert("✅ Form submitted successfully!");
+      alert("Form submitted successfully!");
       form.reset();
     }
   }
