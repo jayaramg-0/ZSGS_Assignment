@@ -8,13 +8,13 @@ body{
 }
 .container{
     margin: 0 auto;
-    border: 5px solid black;
+    border: 2px solid black;
     width: 85%;
     padding: 10px;
     /* background: linear-gradient(to right ,#85afae ,#D5D7CE,#86ACAB); */
     /* background-color: #D5D7CE; */
     /* padding: 10px; */
-    background: #f2e56f;
+    /* background: #f2e56f; */
     background: linear-gradient(90deg, rgb(237, 171, 28), rgb(45, 159, 94), rgb(237, 171, 28));
 
 }
@@ -113,6 +113,10 @@ table{
 .credits{
     text-align: center;
     border: 1px solid black;
+}
+.credits td{
+    padding: 8px;
+    /* border: 1px solid black; */
 }
 
 .third td {
