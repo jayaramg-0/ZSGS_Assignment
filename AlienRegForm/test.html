@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alien Registration</h1>
+        <p class="subtitle">Welcome to Earth!</p>
+
+        <form id="form">
+            <div class="field">
+                <label>Planet Name <span class="hint">(vowel + digit)</span></label>
+                <input type="text" id="planet" placeholder="Mars5">
+                <div class="error" id="planetErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Alien ID <span class="hint">(XXX-XX_9999@XXX)</span></label>
+                <input type="text" id="alienId" placeholder="ZOR-XY_1234@UFO">
+                <div class="error" id="idErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Antenna Count <span class="hint">(even only)</span></label>
+                <input type="number" id="antenna" placeholder="2">
+                <div class="error" id="antennaErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Favorite Phrase <span class="hint">(emoji or punctuation)</span></label>
+                <input type="text" id="phrase" placeholder="Hello! 🌍">
+                <div class="error" id="phraseErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Landing Date <span class="hint">(future only)</span></label>
+                <input type="date" id="date">
+                <div class="error" id="dateErr"></div>
+            </div>
+
+            <div class="field">
+                <label>Number of Eyes</label>
+                <select id="eyes">
+                    <option value="">Select...</option>
+                    <option value="1">1 Eye</option>
+                    <option value="2">2 Eyes</option>
+                    <option value="3">3 Eyes</option>
+                    <option value="5">5+ Eyes</option>
+                </select>
+                <div class="error" id="eyesErr"></div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div style="font-size: 3em;">✨</div>
+            <h2>Registration Complete!</h2>
+            <p>Your Earth ID:</p>
+            <div class="reg-code" id="code"></div>
+            <div class="close-btn" onclick="reset()">Register Another</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
