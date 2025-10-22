@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Meme Caption Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="controls">
+    <h2>Simple Meme Caption Lab</h2>
+
+    <label>Upload image</label>
+    <input id="imgfile" type="file" accept="image/*">
+
+    <label>Top text</label>
+    <input id="topText" type="text" placeholder="TOP TEXT (caps looks nice)" value="">
+
+    <label>Bottom text</label>
+    <input id="botText" type="text" placeholder="bottom text" value="">
+
+    <label>Font size (px)</label>
+    <input id="fontSize" type="number" min="12" max="200" value="48">
+
+    <label>Font family</label>
+    <select id="fontFamily">
+      <option value="Impact, Arial Black, sans-serif">Impact</option>
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Helvetica, sans-serif">Helvetica</option>
+      <option value="Comic Sans MS, cursive">Comic</option>
+    </select>
+
+    <label>Text color</label>
+    <div class="color-row">
+      <input id="textColor" type="color" value="#FFFFFF">
+      <div class="color-sample" id="sample" style="background:#fff"></div>
+    </div>
+
+    <label>Stroke width</label>
+    <input id="stroke" type="number" min="0" max="10" value="3">
+
+    <div class="row">
+      <button id="render">Render</button>
+      <button id="download">Download</button>
+    </div>
+
+    <div class="hint">Tip: Use uppercase for the classic meme look. If your image is large the canvas will scale to fit.</div>
+  </div>
+
+  <div class="canvas-wrap">
+    <canvas id="memeCanvas" width="640" height="360"></canvas>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
